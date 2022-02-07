@@ -22,7 +22,8 @@ const resetStyleSheet = () => {
   sheet.clearTag();
 };
 
-const getHTML = () => (isServer() ? new ServerStyleSheet().getStyleTags() : sheet.toString());
+// const getHTML = () => (isServer() ? new ServerStyleSheet().getStyleTags() : sheet.toString());
+const getHTML = () => (sheet.toString());
 
 const extract = (regex) => {
   let style = '';
